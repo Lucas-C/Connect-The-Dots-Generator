@@ -387,7 +387,7 @@
         return points.filter((_, i) => !excludedPoints.includes(i));
     }
 
-    function togglePathColor() { //BUG COLOR NOT CHANGING
+    function togglePathColor() {
         var x = document.getElementById('container').getElementsByTagName('path')[pathSelector.selectedIndex];
         if (x.classList.contains('active-stroke')) {
             x.classList.remove('active-stroke');
